@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-direction: row; */
+    height: 100%;
+    justify-content: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 280px;
+    left: 0px;
+    right: 0px;
+    min-height: 769px;
+    /* min-width: 481px; */
+    background-color: rgb(242,65,80);
+    transform: skew(0deg, 338deg);
+    z-index: -1;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* button:hover {
+
+} */
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(230,0,18);
+}
+
+.img-form {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    gap: 63px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.img-form img {
+    width: auto;
+    height: 70%;
+}
+
+/* .form{
+    display: flex;
+    width: 550px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 300px;
+    padding: 10%;
+    gap: 30px;
+}
+
+.form-log {
+    width: 550px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 9px;
+    border: solid 1px gray;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: stretch;
+}
+
+.model-cont {
+  max-width: 850px;
+  height: 100%;
+}
+
+.model-cont img {
+  width: 100%;
+  height: 100%;
+}
+
+.model {
+    height: 100%;
+    width: auto;
+}
+
+.personajes {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .consola{
+    display: none;
+  }
+/*
+  .model {
+    width: 100%;
+  } */
+
+  .personajes {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+.model-cont {
+   width: 100%;
+   height: auto;
+
+}
+
+.model-cont img {
+  width: 100%;
+  height: 370px;
+}
+
+}
